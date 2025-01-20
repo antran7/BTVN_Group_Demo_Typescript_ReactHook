@@ -11,13 +11,11 @@ interface SearchAction {
   payload: string;
 }
 
-// Define the initial state with correct types
 const initialState: SearchState = {
   currentSearch: "",
   searchHistory: [],
 };
 
-// Define the reducer function with proper typing
 function searchReducer(state: SearchState, action: SearchAction): SearchState {
   switch (action.type) {
     case "ADD_SEARCH":
@@ -48,7 +46,6 @@ interface SearchProviderProps {
   children: ReactNode;
 }
 
-// Define the SearchProvider component
 export function SearchProvider({ children }: SearchProviderProps): JSX.Element {
   const [state, dispatch] = useReducer(searchReducer, initialState);
   return (
