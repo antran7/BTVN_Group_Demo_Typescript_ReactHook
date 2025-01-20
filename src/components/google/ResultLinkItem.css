@@ -1,0 +1,31 @@
+.search-result-item {
+    padding: 10px 0;
+    margin-bottom: 15px;
+    font-family: Verdana, sans-serif;
+  }
+  
+  .result-item {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .result-item-link {
+    font-size: 13px;
+    color: #202124;
+    margin-bottom: 5px;
+  }
+
+  .result-item-title {
+    font-size: 20px;
+  }
+
+  .result-item-title:hover {
+    text-decoration: underline;
+  }
+  
+  .result-item-description {
+    color: #4d5156;
+    line-height: 1.5;
+  }
+  
